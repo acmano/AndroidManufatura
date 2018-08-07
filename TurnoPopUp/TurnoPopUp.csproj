@@ -1,0 +1,427 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A397FA2A-61C6-4572-BDD8-2C4E15FB6559}</ProjectGuid>
+    <ProjectTypeGuids>{EFBA0AD7-5A72-4C68-AF49-83D382785DCF};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <TemplateGuid>{9ef11e43-1701-4396-8835-8392d57abb70}</TemplateGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TurnoPopUp</RootNamespace>
+    <AssemblyName>TurnoPopUp</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <AndroidResgenFile>Resources\Resource.Designer.cs</AndroidResgenFile>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+    <AndroidUseLatestPlatformSdk>false</AndroidUseLatestPlatformSdk>
+    <TargetFrameworkVersion>v8.1</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Mono.Android" />
+    <Reference Include="mscorlib" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Adapter.cs" />
+    <Compile Include="PopUp.cs" />
+    <Compile Include="Resources\Resource.Designer.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Sql.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Sql.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AboutResources.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Xamarin.Android.Support.v7.AppCompat" Version="27.0.2" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\values\strings.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\values\colors.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\diarioproducao.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\ic_launcher.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\ic_launcher_foreground.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\ic_launcher_round.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="W:\CSharp\Android\LorenTheme\Resources\Drawable\loren_theme_button_disable.9.png">
+      <Link>Resources\drawable\loren_theme_button_disable.9.png</Link>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="W:\CSharp\Android\LorenTheme\Resources\Drawable\loren_theme_button_disable_focused.9.png">
+      <Link>Resources\drawable\loren_theme_button_disable_focused.9.png</Link>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="W:\CSharp\Android\LorenTheme\Resources\Drawable\loren_theme_button_normal.9.png">
+      <Link>Resources\drawable\loren_theme_button_normal.9.png</Link>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="W:\CSharp\Android\LorenTheme\Resources\Drawable\loren_theme_button_pressed.9.png">
+      <Link>Resources\drawable\loren_theme_button_pressed.9.png</Link>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="W:\CSharp\Android\LorenTheme\Resources\Drawable\loren_theme_button_selected.9.png">
+      <Link>Resources\drawable\loren_theme_button_selected.9.png</Link>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="W:\CSharp\Android\LorenTheme\Resources\Drawable\loren_theme_checkbox_off.png">
+      <Link>Resources\drawable\loren_theme_checkbox_off.png</Link>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="W:\CSharp\Android\LorenTheme\Resources\Drawable\loren_theme_checkbox_off_disabled.png">
+      <Link>Resources\drawable\loren_theme_checkbox_off_disabled.png</Link>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="W:\CSharp\Android\LorenTheme\Resources\Drawable\loren_theme_checkbox_off_disabled_focused.png">
+      <Link>Resources\drawable\loren_theme_checkbox_off_disabled_focused.png</Link>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="W:\CSharp\Android\LorenTheme\Resources\Drawable\loren_theme_checkbox_off_focused.png">
+      <Link>Resources\drawable\loren_theme_checkbox_off_focused.png</Link>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="W:\CSharp\Android\LorenTheme\Resources\Drawable\loren_theme_checkbox_off_pressed.png">
+      <Link>Resources\drawable\loren_theme_checkbox_off_pressed.png</Link>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="W:\CSharp\Android\LorenTheme\Resources\Drawable\loren_theme_checkbox_on.png">
+      <Link>Resources\drawable\loren_theme_checkbox_on.png</Link>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="W:\CSharp\Android\LorenTheme\Resources\Drawable\loren_theme_checkbox_on_disabled.png">
+      <Link>Resources\drawable\loren_theme_checkbox_on_disabled.png</Link>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="W:\CSharp\Android\LorenTheme\Resources\Drawable\loren_theme_checkbox_on_disabled_focused.png">
+      <Link>Resources\drawable\loren_theme_checkbox_on_disabled_focused.png</Link>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="W:\CSharp\Android\LorenTheme\Resources\Drawable\loren_theme_checkbox_on_focused.png">
+      <Link>Resources\drawable\loren_theme_checkbox_on_focused.png</Link>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="W:\CSharp\Android\LorenTheme\Resources\Drawable\loren_theme_checkbox_on_pressed.png">
+      <Link>Resources\drawable\loren_theme_checkbox_on_pressed.png</Link>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="W:\CSharp\Android\LorenTheme\Resources\Drawable\loren_theme_dialog_body.xml">
+      <Link>Resources\drawable\loren_theme_dialog_body.xml</Link>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="W:\CSharp\Android\LorenTheme\Resources\Drawable\loren_theme_dialog_body_fulldark.9.png">
+      <Link>Resources\drawable\loren_theme_dialog_body_fulldark.9.png</Link>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="W:\CSharp\Android\LorenTheme\Resources\Drawable\loren_theme_dialog_footer.xml">
+      <Link>Resources\drawable\loren_theme_dialog_footer.xml</Link>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="W:\CSharp\Android\LorenTheme\Resources\Drawable\loren_theme_dialog_title.xml">
+      <Link>Resources\drawable\loren_theme_dialog_title.xml</Link>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="W:\CSharp\Android\LorenTheme\Resources\Drawable\loren_theme_expander_close.9.png">
+      <Link>Resources\drawable\loren_theme_expander_close.9.png</Link>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="W:\CSharp\Android\LorenTheme\Resources\Drawable\loren_theme_expander_open.9.png">
+      <Link>Resources\drawable\loren_theme_expander_open.9.png</Link>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="W:\CSharp\Android\LorenTheme\Resources\Drawable\loren_theme_image_click_effect.xml">
+      <Link>Resources\drawable\loren_theme_image_click_effect.xml</Link>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="W:\CSharp\Android\LorenTheme\Resources\Drawable\loren_theme_listview_title.xml">
+      <Link>Resources\drawable\loren_theme_listview_title.xml</Link>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="W:\CSharp\Android\LorenTheme\Resources\Drawable\loren_theme_menu_more.png">
+      <Link>Resources\drawable\loren_theme_menu_more.png</Link>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="W:\CSharp\Android\LorenTheme\Resources\Drawable\loren_theme_progress_white.xml">
+      <Link>Resources\drawable\loren_theme_progress_white.xml</Link>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="W:\CSharp\Android\LorenTheme\Resources\Drawable\loren_theme_radio_off.png">
+      <Link>Resources\drawable\loren_theme_radio_off.png</Link>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="W:\CSharp\Android\LorenTheme\Resources\Drawable\loren_theme_radio_off_disabled.png">
+      <Link>Resources\drawable\loren_theme_radio_off_disabled.png</Link>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="W:\CSharp\Android\LorenTheme\Resources\Drawable\loren_theme_radio_off_disabled_focused.png">
+      <Link>Resources\drawable\loren_theme_radio_off_disabled_focused.png</Link>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="W:\CSharp\Android\LorenTheme\Resources\Drawable\loren_theme_radio_off_focused.png">
+      <Link>Resources\drawable\loren_theme_radio_off_focused.png</Link>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="W:\CSharp\Android\LorenTheme\Resources\Drawable\loren_theme_radio_off_pressed.png">
+      <Link>Resources\drawable\loren_theme_radio_off_pressed.png</Link>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="W:\CSharp\Android\LorenTheme\Resources\Drawable\loren_theme_radio_on.png">
+      <Link>Resources\drawable\loren_theme_radio_on.png</Link>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="W:\CSharp\Android\LorenTheme\Resources\Drawable\loren_theme_radio_on_disabled.png">
+      <Link>Resources\drawable\loren_theme_radio_on_disabled.png</Link>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="W:\CSharp\Android\LorenTheme\Resources\Drawable\loren_theme_radio_on_disabled_focused.png">
+      <Link>Resources\drawable\loren_theme_radio_on_disabled_focused.png</Link>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="W:\CSharp\Android\LorenTheme\Resources\Drawable\loren_theme_radio_on_focused.png">
+      <Link>Resources\drawable\loren_theme_radio_on_focused.png</Link>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="W:\CSharp\Android\LorenTheme\Resources\Drawable\loren_theme_radio_on_pressed.png">
+      <Link>Resources\drawable\loren_theme_radio_on_pressed.png</Link>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="W:\CSharp\Android\LorenTheme\Resources\Drawable\loren_theme_select_button.xml">
+      <Link>Resources\drawable\loren_theme_select_button.xml</Link>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="W:\CSharp\Android\LorenTheme\Resources\Drawable\loren_theme_select_checkbox.xml">
+      <Link>Resources\drawable\loren_theme_select_checkbox.xml</Link>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="W:\CSharp\Android\LorenTheme\Resources\Drawable\loren_theme_select_edit_text.xml">
+      <Link>Resources\drawable\loren_theme_select_edit_text.xml</Link>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="W:\CSharp\Android\LorenTheme\Resources\Drawable\loren_theme_select_expander_group.xml">
+      <Link>Resources\drawable\loren_theme_select_expander_group.xml</Link>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="W:\CSharp\Android\LorenTheme\Resources\Drawable\loren_theme_select_radio.xml">
+      <Link>Resources\drawable\loren_theme_select_radio.xml</Link>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="W:\CSharp\Android\LorenTheme\Resources\Drawable\loren_theme_select_spinner_background.xml">
+      <Link>Resources\drawable\loren_theme_select_spinner_background.xml</Link>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="W:\CSharp\Android\LorenTheme\Resources\Drawable\loren_theme_select_tab.xml">
+      <Link>Resources\drawable\loren_theme_select_tab.xml</Link>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="W:\CSharp\Android\LorenTheme\Resources\Drawable\loren_theme_select_textappearance_dropdownitem.xml">
+      <Link>Resources\drawable\loren_theme_select_textappearance_dropdownitem.xml</Link>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="W:\CSharp\Android\LorenTheme\Resources\Drawable\loren_theme_shape_edit_text_actived.xml">
+      <Link>Resources\drawable\loren_theme_shape_edit_text_actived.xml</Link>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="W:\CSharp\Android\LorenTheme\Resources\Drawable\loren_theme_shape_edit_text_defaul.xml">
+      <Link>Resources\drawable\loren_theme_shape_edit_text_defaul.xml</Link>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="W:\CSharp\Android\LorenTheme\Resources\Drawable\loren_theme_shape_edit_text_disabled.xml">
+      <Link>Resources\drawable\loren_theme_shape_edit_text_disabled.xml</Link>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="W:\CSharp\Android\LorenTheme\Resources\Drawable\loren_theme_shape_edit_text_disabled_focused.xml">
+      <Link>Resources\drawable\loren_theme_shape_edit_text_disabled_focused.xml</Link>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="W:\CSharp\Android\LorenTheme\Resources\Drawable\loren_theme_shape_edit_text_focused.xml">
+      <Link>Resources\drawable\loren_theme_shape_edit_text_focused.xml</Link>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="W:\CSharp\Android\LorenTheme\Resources\Drawable\loren_theme_spinner_active.9.png">
+      <Link>Resources\drawable\loren_theme_spinner_active.9.png</Link>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="W:\CSharp\Android\LorenTheme\Resources\Drawable\loren_theme_spinner_default.9.png">
+      <Link>Resources\drawable\loren_theme_spinner_default.9.png</Link>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="W:\CSharp\Android\LorenTheme\Resources\Drawable\loren_theme_spinner_disabled.9.png">
+      <Link>Resources\drawable\loren_theme_spinner_disabled.9.png</Link>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="W:\CSharp\Android\LorenTheme\Resources\Drawable\loren_theme_spinner_focused.9.png">
+      <Link>Resources\drawable\loren_theme_spinner_focused.9.png</Link>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="W:\CSharp\Android\LorenTheme\Resources\Drawable\loren_theme_spinner_pressed.9.png">
+      <Link>Resources\drawable\loren_theme_spinner_pressed.9.png</Link>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="W:\CSharp\Android\LorenTheme\Resources\Drawable\loren_theme_spinner_white_48.png">
+      <Link>Resources\drawable\loren_theme_spinner_white_48.png</Link>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="W:\CSharp\Android\LorenTheme\Resources\Drawable\loren_theme_tab_focus.xml">
+      <Link>Resources\drawable\loren_theme_tab_focus.xml</Link>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="W:\CSharp\Android\LorenTheme\Resources\Drawable\loren_theme_tab_layout.xml">
+      <Link>Resources\drawable\loren_theme_tab_layout.xml</Link>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="W:\CSharp\Android\LorenTheme\Resources\Drawable\loren_theme_tab_press.xml">
+      <Link>Resources\drawable\loren_theme_tab_press.xml</Link>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="W:\CSharp\Android\LorenTheme\Resources\Drawable\loren_theme_tab_selected.xml">
+      <Link>Resources\drawable\loren_theme_tab_selected.xml</Link>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="W:\CSharp\Android\LorenTheme\Resources\Drawable\loren_theme_tab_unselected.xml">
+      <Link>Resources\drawable\loren_theme_tab_unselected.xml</Link>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\popup.axml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\popupdetalhe.axml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\values\ic_launcher_background.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\values\styles.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Comum\Comum.csproj">
+      <Project>{5438278f-e656-45b8-8507-f6de96192dfa}</Project>
+      <Name>Comum</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Sql.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Sql.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\colors.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\ic_launcher_background.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\Strings.xml">
+      <Generator>MSBuild:UpdateGeneratedFiles</Generator>
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\styles.xml" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
